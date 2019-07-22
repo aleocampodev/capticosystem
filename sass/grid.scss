@@ -1,0 +1,47 @@
+$columns: 12;
+$base-width: (100 / $columns) * 1%;
+$padding:16px;
+
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    /*min-width:32rem;*/
+}
+
+.col{
+    background: white;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+@mixin respond($column-name){
+    @for $col from 1 through $columns {
+       .col-#{$column-name}-#{$col} {
+         flex-basis:$base-width * $col;
+         max-width:$base-width * $col;
+       }
+     }
+}
+
+@media only screen and (min-width:1201px){
+    @include respond("lg");
+}
+@media only screen and (max-width:1200px){
+    @include respond("ml");
+}
+
+
+@media only screen and (max-width:900px) {
+    @include respond('md');
+}
+
+@media only screen and (max-width:600px){
+    @include respond("sm");
+  }
+  

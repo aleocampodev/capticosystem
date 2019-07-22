@@ -1,0 +1,195 @@
+@media only screen and (min-width:1201px){
+}
+@media only screen and (max-width:1200px){
+    .body{
+        justify-content:center;
+    }
+
+    .col-lg-2{
+        margin-left:0;
+    }
+
+
+    .text{
+        margin-left:20px;
+    }
+
+    .subscribe__input{
+        margin-left:20px;
+        width:100%;
+    }
+
+    .slider{
+        width:220px;
+    }
+}
+
+
+@media only screen and (max-width:900px) {   
+    .cols{
+        width:100%;
+        background:#fff;
+    }
+    
+
+
+
+
+
+    .col-md-2 ,.col-lg-2{
+        margin-left:0;
+    }
+    .col-md-6{
+        margin-left:18%;
+    }
+
+    .text{
+        margin-left:15px;
+    }
+
+    .logo__img{
+        margin-left:0;
+    }
+
+    .main-nav__item{
+        font-size:13px;
+        margin-bottom:2px;
+    }
+
+    
+    .subscribe{
+        &__input{
+        margin-left:15px;
+        width:105%;
+        }
+
+        &__arrow-right{
+            font-size:25px;
+        }
+
+        [placeholder]{
+            font-size:15px;
+        }
+    }
+
+    .slider{
+        width:65%;
+        height:45%;
+
+        &__img{
+            width:45%;
+            height:45%;
+        }
+
+        &__title{
+            font-size:29px;
+        }
+
+        &__label{
+            font-size:35px;
+        }
+
+        &__dots{
+            top:130px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .cols{
+        width:100%;
+        background: #fff;
+    }
+    .left{
+        width:250px;
+    }
+
+    .logo__img{
+        width:52px;
+        height:52px;
+    }
+
+    .main-nav{
+        margin-top:0;
+
+        &__item{
+            font-size:9px;
+        }
+    }
+
+    .col-sm-2{
+        margin-left:10%;
+    }
+
+    .col-sm-5{
+        margin-left:35%;
+    }
+
+    .text{
+        &__title{
+            font-size:20px;
+        }
+
+        &__style{
+            font-size:9px;
+        }
+    }
+
+    .subscribe{
+        &__input{
+            height:50px;
+        }
+
+        &__arrow-right{
+            margin-top:10px;
+        }
+
+        [placeholder]{
+            font-size:10px;
+        }
+    }
+
+    .social__icon{
+        width:30px;
+        height:30px;
+        font-size:20px;
+    }
+
+
+}
+
+@media only screen and (max-width:488px){
+    .left{
+        width:210px;
+    }
+
+    .logo__img{
+        width:49px;
+        height:49px;
+    }
+
+    .col-sm-2{
+        margin-left:10px;
+    }
+
+    .col-sm-5{
+        margin-left:20%;
+        margin-top:5px;
+    }
+
+    .social__icon{
+        margin-left:20px;
+    }
+
+    .subscribe{
+        &__arrow-right{
+            font-size:20px;
+            margin-top:10px;
+        }
+    }
+}
+
+
+
+
