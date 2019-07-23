@@ -41,8 +41,10 @@
     
     .cols{
         width:100%;
-        background:#fff;
+    
     }
+
+    
 
     
     
@@ -114,14 +116,12 @@
 @media only screen and (max-width:600px){
     .cols{
         width:100%;
-        background: #fff;
     }
 
-    .box{
-        background:#fff;
-    }
+
     .left{
         width:250px;
+        background:#fff;
     }
 
     .logo__img{
