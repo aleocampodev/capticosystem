@@ -86,7 +86,7 @@ body {
   .subscribe__input {
     margin: 5px;
     margin-left: 58px;
-    border-left-color: #f2825b;
+    /*border-left-color:rgb(233, 183, 17);*/
     border-left-width: 3px;
     border-top: none;
     border-right: none;

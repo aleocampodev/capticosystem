@@ -5,8 +5,16 @@
         justify-content:center;
     }
 
+    .left{
+        width:395px;
+    }
+
     .col-lg-2{
         margin-left:0;
+    }
+
+    .col-lg-5{
+        margin-left:69px;
     }
 
 
@@ -26,10 +34,17 @@
 
 
 @media only screen and (max-width:900px) {   
+    .box{
+        display:flex;
+        flex-direction:column;
+    }
+    
     .cols{
         width:100%;
         background:#fff;
     }
+
+    
     
 
 
@@ -100,6 +115,10 @@
     .cols{
         width:100%;
         background: #fff;
+    }
+
+    .box{
+        background:#fff;
     }
     .left{
         width:250px;
