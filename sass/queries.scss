@@ -34,25 +34,31 @@
 
 
 @media only screen and (max-width:900px) {   
+
     .box{
         display:flex;
         flex-direction:column;
+        margin:185px;
+        height:1010px;
     }
+
+    
+    
     
     .cols{
         width:100%;
-    
     }
 
+   .row ,.text ,.subscribe ,.social{
+       margin:0 auto;
+   }
+   
+
+    .left{
+        height:450px;
+    }
     
-
     
-    
-
-
-
-
-
     .col-md-2 ,.col-lg-2{
         margin-left:0;
     }
@@ -60,9 +66,6 @@
         margin-left:18%;
     }
 
-    .text{
-        margin-left:15px;
-    }
 
     .logo__img{
         margin-left:0;
@@ -72,56 +75,84 @@
         font-size:13px;
         margin-bottom:2px;
     }
+    .text{
+        margin-right:32%;
+
+        &__title{
+            font-size:1.8em;
+        }
+
+        &__style{
+            font-size:1em;
+        }
+    }
+
+  
 
     
     .subscribe{
         &__input{
-        margin-left:15px;
-        width:105%;
+            margin-right:35px;
+            margin-bottom:45px;
+            width:105%;
         }
 
         &__arrow-right{
             font-size:25px;
+            bottom:90px;
         }
 
         [placeholder]{
-            font-size:15px;
+            font-size:1.2em;
         }
     }
 
-    .slider{
-        width:65%;
-        height:45%;
+    .social{
+        margin-bottom:85px;
+        margin-left:85px;
+    }
 
-        &__img{
-            width:45%;
-            height:45%;
+    .slider{
+        height:523px;
+        margin:20px;
+    
+        &__swiper{
+                height: calc(490px / 3);
         }
+    
+        &__img{
+            text-align: center;
+        }
+
 
         &__title{
-            font-size:29px;
+            font-size:1.2em;
         }
 
-        &__label{
-            font-size:35px;
-        }
-
-        &__dots{
-            top:130px;
+        &__boton{
+            
+            &--1{
+               margin-left:-55px 
+            }
         }
     }
 }
 
 
 @media only screen and (max-width:600px){
+    body{
+        font-size:1em;
+    }
+
     .cols{
-        width:100%;
+        width:455px;
     }
 
 
+
     .left{
-        width:250px;
         background:#fff;
+       
     }
 
     .logo__img{
@@ -129,35 +160,31 @@
         height:52px;
     }
 
-    .main-nav{
-        margin-top:0;
-
-        &__item{
-            font-size:9px;
-        }
-    }
 
     .col-sm-2{
         margin-left:10%;
     }
 
     .col-sm-5{
-        margin-left:35%;
+        margin-left:25%;
     }
 
     .text{
+
         &__title{
-            font-size:20px;
+            font-size:1.5em;
         }
 
         &__style{
-            font-size:9px;
+            font-size:1em;
         }
     }
 
     .subscribe{
         &__input{
             height:50px;
+            margin-left:1px;
+            width:120%;
         }
 
         &__arrow-right{
@@ -165,47 +192,68 @@
         }
 
         [placeholder]{
-            font-size:10px;
+            font-size:0.97em;
         }
     }
 
     .social__icon{
         width:30px;
         height:30px;
-        font-size:20px;
+        font-size:1.3em;
+    }
+
+    .slider{
+        &__title{
+            font-size:1em;
+        }
+        
     }
 
 
 }
 
 @media only screen and (max-width:488px){
-    .left{
-        width:210px;
+    body{
+        font-size:0.95em;
     }
+    .left{
+        background:#fff;
+    }
+
+  
 
     .logo__img{
         width:49px;
         height:49px;
     }
 
+    .text{
+        margin-top:10px;
+        margin-left:105px;
+        width:455px;
+    }
+
     .col-sm-2{
-        margin-left:10px;
+        margin-left:75px;
     }
 
-    .col-sm-5{
-        margin-left:20%;
-        margin-top:5px;
+    .col-ml-6{
+        margin-left:15%;
+        margin-top:-4px;
     }
 
-    .social__icon{
-        margin-left:20px;
-    }
 
     .subscribe{
         &__arrow-right{
             font-size:20px;
             margin-top:10px;
         }
+    }
+
+    .slider{
+       &__title{
+           font-size:0.95em;
+       }
     }
 }
 
