@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 
-body{
+#particles-js{
     background:linear-gradient(to right, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 20%,rgba(255,94,124,1) 99%);
     width:100%;
     min-height:100vh;
@@ -24,7 +24,9 @@ body{
     justify-content:center;
     box-shadow:0 13px 38px rgba(0,0,0,0.3);
     margin:80px 0px;
+    z-index:999999;
 }
+
     
 .left{
     background:#ffffff;
@@ -108,7 +110,7 @@ body{
     &__input{
         margin:5px;
         margin-left:58px;
-        border-left-color:rgba(242,130,91,1);
+        border:0 solid orange;
         border-left-width:3px;
         border-top:none;
         border-right:none;
@@ -271,8 +273,17 @@ body{
 
 }
 
+.background{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    bottom:0;
+    z-index:-1;
 
-.cols {   /*Este añade las propiedades flex compartidas es un helper*/
+}
+
+.cols {   /*es un helper*/
     display: flex;
 }
 
