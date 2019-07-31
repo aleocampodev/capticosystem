@@ -5,30 +5,41 @@
 }
 
 body{
-    background:linear-gradient(to right, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 20%,rgba(255,94,124,1) 99%);
+    /*background:linear-gradient(to right, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 20%,rgba(255,94,124,1) 99%);
     width:100%;
     min-height:100vh;
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: center;*/
     overflow-x:hidden;
     font-family:'Open Sans',sans-serif;
-    font-size:0.92em;
+    font-size:0.82em;
     font-weight:500;
 }
 
+#particles-js{
+    background:linear-gradient(to right, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 20%,rgba(255,94,124,1) 99%);
+    width:100%;
+    min-height:120vh;
+}
+
 .box{
-    width:1200px;
-    height:730px;
+    width:1100px;
+    height:600px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin:0 auto;
     display:flex;
     justify-content:center;
+    margin-top:53px;
     box-shadow:0 13px 38px rgba(0,0,0,0.3);
-    margin:80px 0px;
 }
     
 .left{
     background:#ffffff;
-    width:452px;
+    width:400px;
     flex-direction: column; 
 }
     
@@ -64,7 +75,7 @@ body{
     align-items:center;
     justify-content: center;
     height:64px;
-    margin-top:12px;  
+    margin-top:16px;  
             
     &__menu{
         list-style:none;
@@ -103,7 +114,7 @@ body{
         
 .subscribe{
     position:relative;
-    margin-top:30px;
+    margin-top:10px;
 
     &__input{
         margin:5px;
@@ -208,18 +219,18 @@ body{
 
 .slider{
     width:250px;
-    height:534px;
+    height:540px;
 
     &__swiper{
         background-color:rgba(246,246,246,.3);
         display:flex;
-        height:calc(100% / 3);
+        height:calc(100% / 3 - 10px);
         justify-content:center;
         align-items:center;
     
         
         &:not(:nth-child(4)){
-            margin-bottom:20px; 
+            margin-bottom:10px; 
         }
 
         &:nth-child(2){
@@ -232,12 +243,12 @@ body{
         display:flex;
         justify-content:center;
         align-items:center;
-        flex-direction:column;
+        flex-direction:column; 
     }
 
     &__img{
         font-size:2.3em;
-        color:white;
+        color:white; 
         margin-bottom:20px;
 
         &--2{
@@ -256,13 +267,13 @@ body{
         position:relative;
 
         &--1{
-            bottom:355px;
-            left:300px;
+            bottom:255px;
+            left:238px;
         }
 
         &--2{
-            bottom:270px;
-            left:271px;
+            bottom:210px;
+            left:211px;
         }
 
     
@@ -270,6 +281,14 @@ body{
 
 
 }
+
+/*#particles-js{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    z-index:-1;
+}*/
 
 
 .cols {   /*Este añade las propiedades flex compartidas es un helper*/
@@ -281,7 +300,7 @@ body{
 }
 
 .col-lg-5{
-    margin-left:95px;
+    margin-left:75px;
 }
 
 .cal{

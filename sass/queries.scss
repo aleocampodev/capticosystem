@@ -1,16 +1,103 @@
 @media only screen and (min-width:1201px){
-}
-@media only screen and (max-width:1200px){
-    .body{
-        justify-content:center;
+    #particles-js{
+        min-height:130vh;
     }
 
-    .left{
-        width:395px;
+    .social{
+        /*background:#c9f658;*/
+        margin:6px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-right: 55px;
+            
+    
+        &__list{
+            /*background:#9692af;*/
+            display:flex;
+            flex-direction:row;
+        }
+    
+        &__item{
+            list-style:none;  
+        }
+    
+        &__link{
+            text-decoration: none;
+        }
+    
+        &__icon{
+            /*display:block;*/
+            position:relative;
+            width:40px;
+            height:40px;
+            line-height:50px;
+            font-size:1.57em;
+            border-radius:50%;
+            margin-left:40px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background:#ffff;
+            border:1px solid #e7d6e3ce;
+            color:gray;
+    
+            &--1:hover{
+                background:#fff;
+                color:#55acee;  
+            }
+    
+            &--2:hover{
+                background:#3b5999;
+                color:#fff;
+            }
+    
+            &--3:hover{
+                background:#fff;
+                color:#cd201f; 
+            }
+    
+            &--4:hover{
+                color:#fff;
+                background:linear-gradient(to right,#f46f30 60%,#c32aa3);
+            }
+        }
+    
+    }
+
+    .slider__boton{
+        &--1{
+            bottom:320px;
+            left:288px;
+        }
+
+        &--2{
+            bottom:260px;
+            left:261px;
+        }
+    }
+    
+}
+@media only screen and (max-width:1200px){
+    body{
+        font-size:0.85em;
+    }
+    #particles-js{
+    background:linear-gradient(to right, rgba(242,130,91,1) 0%,rgba(229,91,43,1) 20%,rgba(255,94,124,1) 99%);
+    width:100%;
+    min-height:110vh;
+}
+    .box{
+        width:905px;
+        height:500px;
+    } 
+
+     .text{
+        margin-top:35px; 
     }
 
     .col-lg-2{
-        margin-left:0;
+        margin-left:15px;
     }
 
     .col-lg-5{
@@ -19,27 +106,44 @@
 
 
     .text{
-        margin-left:20px;
+        margin-left:28px;
     }
 
     .subscribe__input{
         margin-left:20px;
         width:100%;
+        height:65px;
     }
 
     .slider{
-        width:220px;
+        width:200px;
+        height:400px;
+
+        &__swiper{
+            height:calc(100% / 3);
+
+            &:not(:nth-child(3)){
+                margin-bottom:5px; 
+            }
+        }
     }
 }
 
 
-@media only screen and (max-width:900px) {   
+
+@media only screen and (max-width:900px) {
+    #particles-js{
+        background: linear-gradient(to right, #f2825b 0%, #e55b2b 20%, #ff5e7c 99%);
+        width: 100%;
+        min-height:140vh;
+    }
 
     .box{
+        margin-top:100px;
+        width:400px;
         display:flex;
         flex-direction:column;
-        margin:185px;
-        height:1010px;
+        height:500px;
     }
 
     
@@ -55,7 +159,11 @@
    
 
     .left{
-        height:450px;
+        height:270px;
+    }
+
+    .right{
+        height:300px;
     }
     
     
@@ -77,6 +185,7 @@
     }
     .text{
         margin-right:32%;
+        height:110px;
 
         &__title{
             font-size:1.8em;
@@ -92,47 +201,73 @@
     
     .subscribe{
         &__input{
-            margin-right:35px;
-            margin-bottom:45px;
-            width:105%;
+            margin-right:50px;
+            margin-bottom:95px;
+            width:100%;
+            height:45px;
         }
 
         &__arrow-right{
             font-size:25px;
-            bottom:90px;
+            bottom:125px;
         }
 
         [placeholder]{
-            font-size:1.2em;
+            font-size:1em;
         }
     }
 
     .social{
-        margin-bottom:85px;
         margin-left:85px;
+
+        &__menu{
+            margin-top:-445px
+        }
+
+        &__list{
+            flex-direction:column;
+        }
+
+        &__item{
+            margin-left:5px;
+        }
+
+        &__icon{
+            width:20px;
+            height:20px;
+            font-size:1em;
+            margin-left:215px;
+
+        }
     }
 
     .slider{
-        height:523px;
+        height:218px;
+        width:125px;
         margin:20px;
     
         &__swiper{
-                height: calc(490px / 3);
+                height: calc(213px / 3);
         }
     
         &__img{
             text-align: center;
+            font-size:1.3em;
+            margin-bottom:5px;
         }
 
 
         &__title{
-            font-size:1.2em;
+            font-size:0.82em;
         }
 
         &__boton{
+            font-size:1.7em;
             
-            &--1{
-               margin-left:-55px 
+            
+            &--2{
+                margin-top:95px;
+                margin-left:5px;
             }
         }
     }
@@ -140,18 +275,27 @@
 
 
 @media only screen and (max-width:600px){
-    body{
-        font-size:1em;
+    .body{
+        font-size:0.98em;
     }
 
-    .cols{
+    .box{
+        height:500px;
         width:455px;
     }
 
 
 
+
     .left{
         background:#fff;
+        width:455px;
+       
+    }
+
+
+    .right{
+        width:455px;
        
     }
 
@@ -172,7 +316,8 @@
     .text{
 
         &__title{
-            font-size:1.5em;
+            font-size:1.6em;
+            font-weight:500;
         }
 
         &__style{
@@ -183,12 +328,12 @@
     .subscribe{
         &__input{
             height:50px;
-            margin-left:1px;
-            width:120%;
+            margin-left:1px; 
+            width:105%;
         }
 
         &__arrow-right{
-            margin-top:10px;
+            margin-top:0;
         }
 
         [placeholder]{
@@ -196,15 +341,23 @@
         }
     }
 
-    .social__icon{
-        width:30px;
-        height:30px;
-        font-size:1.3em;
+    .social{
+        
+        &__menu{
+            margin-left:50px;
+
+        }
+
+        &__icon{
+            width:20px;
+            height:20px;
+            font-size:1em;
+        }
     }
 
     .slider{
         &__title{
-            font-size:1em;
+            font-size:0.8em;
         }
         
     }
@@ -213,11 +366,28 @@
 }
 
 @media only screen and (max-width:488px){
-    body{
+    #particles-js{
+        width:120%;
+        min-height:150vh;
+    }
+
+    .row{
+        width:305px;
+    }
+    .body{
         font-size:0.95em;
+    }
+   .box{
+     
+     margin-top:145px;
+     width:345px;
     }
     .left{
         background:#fff;
+        width:345px;
+    }
+    .right{
+        width:345px;
     }
 
   
@@ -225,29 +395,35 @@
     .logo__img{
         width:49px;
         height:49px;
+        
     }
 
     .text{
         margin-top:10px;
-        margin-left:105px;
-        width:455px;
+        margin-left:45px;
+        white-space: nowrap;
+        width:155px;
     }
 
     .col-sm-2{
-        margin-left:75px;
+        margin-left:10px;
     }
 
     .col-ml-6{
-        margin-left:15%;
-        margin-top:-4px;
+        margin-left:100px;
+        margin-top:4px;
     }
 
 
     .subscribe{
         &__arrow-right{
             font-size:20px;
-            margin-top:10px;
+            
         }
+    }
+
+    .social__menu{
+        margin-left:5px;
     }
 
     .slider{
