@@ -4,7 +4,7 @@ var ImageminPlugin = require ('imagemin-webpack');
 var HtmlWebpackPlugin=require('html-webpack-plugin');
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var devMode = process.env.NODE_ENV !== 'production';
-var webpack = require('webpack');
+/*var webpack = require('webpack');*/
 
 module.exports = {
     entry:'./js/index.js',
@@ -72,10 +72,10 @@ module.exports = {
             filename:devMode ? '[name].css' : '[name].[hash].css',
             chunkFilename: devMode ? '[id].css' : '[id].[hash].css'
         }),
-        new webpack.ProvidePlugin({
+        /*new webpack.ProvidePlugin({
             $:'jquery',
             jQuery:'jquery'
-        })
+        })*/
     ],
     stats:{
         children:false
