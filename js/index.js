@@ -4,11 +4,11 @@ require('./particles');
 require('./app');
 
 
-import $ from 'jquery';
+/*import $ from 'jquery';*/
 
-$(document).ready(function() {
+/*$(document).ready(function() {
 	$("#particles-js").css({
 		"height": $(window).height() + "pix"
 	});
-	console.log('prueba')
-})
+	console.log('prueba');
+})*/
