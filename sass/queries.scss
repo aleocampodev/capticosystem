@@ -264,10 +264,13 @@
         &__boton{
             font-size:1.7em;
             
-            
+            &--1{
+                bottom:245px;
+                left:160px
+            }
             &--2{
-                margin-top:95px;
-                margin-left:5px;
+                bottom:210px;
+                left:132px;
             }
         }
     }
