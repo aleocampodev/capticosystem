@@ -199,6 +199,10 @@
             margin-bottom:95px;
             height:45px;
             width:150%;
+
+            &:focus + .subscribe__arrow-right{
+                bottom:130px;
+            }
         }
 
         &__arrow-right{
@@ -213,7 +217,9 @@
     }
 
     .social{
-        margin-left:85px;
+        position:absolute;
+        margin-top:-65px;
+        margin-left:45px;
 
         &__menu{
             margin-top:-445px
@@ -237,12 +243,32 @@
     }
 
     .slider{
+        position:relative;
+        top:75px;
+
+        &__boton{
+            font-size:1.2em;
+            
+            &--1{
+                margin-bottom:35px;
+                margin-left:5px
+            }
+            &--2{
+                margin-bottom:60px;
+                margin-left:5px;
+            }
+        }
+    }
+
+    .wrapper{
         height:218px;
         width:125px;
         margin:20px;
+
     
         &__swiper{
                 height: calc(213px / 3);
+                margin-right:15px;
 
             & i {
                 text-align:center;
@@ -259,20 +285,17 @@
                 color:rgba(155,155,155,0.8);
             }
         }
+
+        .wrappers{
+
+            &:nth-child(1){
+                margin-top:35px;
+            }
+
+
+        }
     
 
-        &__boton{
-            font-size:1.3em;
-            
-            &--1{
-                bottom:145px;
-                left:150px
-            }
-            &--2{
-                bottom:110px;
-                left:132px;
-            }
-        }
     }
 }
 

@@ -36,6 +36,11 @@ buttonTop.addEventListener("click", function(e){
 	update(start);  
 })
 
+buttonBottom.addEventListener("click",function(e){
+	start = start + 1 > lengths - 1 ? 0 : start + 1 ;
+	update(start);
+})
+
 
 
 
