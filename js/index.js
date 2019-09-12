@@ -12,7 +12,7 @@ console.log(sliderbox)
 
 //Punto de inicio
 var start = 0;
-var sliderBottom = 0;
+var sliderTop = 0;
 var lengths = sliderbox.length;
 console.log(lengths);
 var boxHeight = movie.clientHeight;
@@ -21,23 +21,23 @@ console.log(boxHeight);
 
 wrapper.style.height = `${boxHeight * lengths}px`;
 
-wrapper.style.bottom = `${sliderBottom}px`;
+wrapper.style.top = `${sliderTop}px`;
 
 
 function update(start){
-	sliderBottom = start * boxHeight * - 1;
-	wrapper.style.bottom = `${sliderBottom}px`;
+	sliderTop = start * boxHeight * - 1;
+	wrapper.style.top = `${sliderTop}px`;
 	console.log(start);
 }
 
 
 buttonTop.addEventListener("click", function(e){
-	start = start - 1 < 0 ? lengths - 1  : start - 1;
+	start = start + 1 > lengths - 1 ? 0  : start + 1;
 	update(start);  
 })
 
 buttonBottom.addEventListener("click",function(e){
-	start = start + 1 > lengths - 1 ? 0 : start + 1 ;
+	start = start - 1 < 0 ? lengths - 1 : start - 1 ;
 	update(start);
 })
 
