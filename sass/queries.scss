@@ -244,18 +244,18 @@
 
     .slider{
         position:relative;
-        top:75px;
+        top:35px;
 
         &__boton{
             font-size:1.2em;
             
             &--1{
-                margin-bottom:35px;
-                margin-left:5px
+                margin-bottom:-5px;
+                margin-left:-8px
             }
             &--2{
-                margin-bottom:60px;
-                margin-left:5px;
+                margin-bottom:20px;
+                margin-left:-8px;
             }
         }
     }
