@@ -26,7 +26,7 @@ body{
 
 .box{
     width:905px;
-    height:490px;
+    height:590px;
     position:absolute;
     top:0;
     left:0;
@@ -34,7 +34,7 @@ body{
     margin:0 auto;
     display:flex;
     justify-content:center;
-    margin-top:13px;
+    margin-top:35px;
     box-shadow:0 13px 38px rgba(0,0,0,0.3);
     z-index:99999;
 }
@@ -137,7 +137,6 @@ body{
     
 
         &:focus {
-            height:60px;
             border-left-width:5px;
 
 
@@ -196,8 +195,8 @@ body{
     &__icon{
         /*display:block;*/
         position:relative;
-        width:30px;
-        height:30px;
+        width:40px;
+        height:40px;
         line-height:50px;
         font-size:1.3em;
         border-radius:50%;
@@ -236,13 +235,13 @@ body{
     background: linear-gradient(135deg, rgba(255,169,83,1) 0%, rgba(207,54,153,0.61) 100%),rgba(246,246,246,.6);
     justify-content:center; 
     align-items:center;
-    flex-basis:80%;
+    flex-basis:60%;
 
 }
 
 .slider{
-    width:200px;
-    height:400px;
+    width:250px;
+    height:500px;
 
 
     /*&__swiper{
@@ -281,19 +280,19 @@ body{
      }
     
      &__boton{
-        font-size:1.5em;
+        font-size:1.7em;
         color:white;
         cursor:pointer;
         position:absolute;
 
         &--1{
-            bottom:235px;
-            left:232px;
+            bottom:265px;
+            left:282px;
         }
 
         &--2{
-            bottom:179px;
-            left:233px;
+            bottom:199px;
+            left:284px;
         }
 
     
@@ -303,8 +302,8 @@ body{
 }
 
 #container{
-   width:200px;
-   height:400px;
+   width:250px;
+   height:500px;
    display:flex;
    position:relative;
    overflow: hidden;
@@ -315,7 +314,7 @@ body{
 
 .wrapper{
    width:100%;
-   height:1200px;
+   height:1500px;
    position:absolute;
 
     &__swiper{
@@ -329,12 +328,12 @@ body{
         color:white;
 
         & i{
-            font-size:2em;
+            font-size:2.8em;
             margin-bottom:10px;
         }
 
         & p{
-            font-size:0.9em;
+            font-size:1em;
             text-align:center;
 
 
@@ -354,8 +353,8 @@ body{
 }
 
 .wrappers{
-    width:200px;
-    height:400px;
+    width:250px;
+    height:500px;
 }
 
 

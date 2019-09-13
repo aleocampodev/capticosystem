@@ -3,6 +3,9 @@
         min-height:130vh;
     }*/
 
+    .box{
+        margin-top:20px;
+    }
     /*.social{
         /*background:#c9f658;*/
        /* margin:6px;
@@ -90,9 +93,15 @@
    /* .box{
         width:905px;
         height:500px;
-    } 
+    } */
 
-     .text{
+    .box{
+        width:80%;
+        margin-top:-5px;
+    }
+    
+
+    /* .text{
         margin-top:35px; 
     }
 
@@ -244,31 +253,32 @@
 
     .slider{
         position:relative;
-        top:35px;
+        top:75px;
 
         &__boton{
             font-size:1.2em;
             
             &--1{
-                margin-bottom:-5px;
-                margin-left:-8px
+                margin-bottom:65px;
+                margin-left:-55px
             }
             &--2{
-                margin-bottom:20px;
-                margin-left:-8px;
+                margin-bottom:95px;
+                margin-left:-56px;
             }
         }
     }
 
     .wrapper{
         height:218px;
-        width:125px;
         margin:20px;
 
     
         &__swiper{
                 height: calc(213px / 3);
-                margin-right:15px;
+                width:145px;
+                position:relative;
+                left:15%;
 
             & i {
                 text-align:center;

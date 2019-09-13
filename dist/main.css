@@ -24,7 +24,7 @@ body {
 
 .box {
   width: 905px;
-  height: 490px;
+  height: 590px;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 13px;
+  margin-top: 35px;
   box-shadow: 0 13px 38px rgba(0, 0, 0, 0.3);
   z-index: 99999; }
 
@@ -111,7 +111,6 @@ body {
         left:25px;*/
     box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.1); }
     .subscribe__input:focus {
-      height: 60px;
       border-left-width: 5px; }
     .subscribe__input:focus + .subscribe__arrow-right {
       margin-top: -8px;
@@ -148,8 +147,8 @@ body {
   .social__icon {
     /*display:block;*/
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     line-height: 50px;
     font-size: 1.3em;
     border-radius: 50%;
@@ -177,11 +176,11 @@ body {
   background: linear-gradient(135deg, #ffa953 0%, rgba(207, 54, 153, 0.61) 100%), rgba(246, 246, 246, 0.6);
   justify-content: center;
   align-items: center;
-  flex-basis: 80%; }
+  flex-basis: 60%; }
 
 .slider {
-  width: 200px;
-  height: 400px;
+  width: 250px;
+  height: 500px;
   /*&__swiper{
         background-color:rgba(246,246,246,.3);
         display:flex;
@@ -216,27 +215,27 @@ body {
   .slider__botons {
     position: relative; }
   .slider__boton {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: white;
     cursor: pointer;
     position: absolute; }
     .slider__boton--1 {
-      bottom: 235px;
-      left: 232px; }
+      bottom: 265px;
+      left: 282px; }
     .slider__boton--2 {
-      bottom: 179px;
-      left: 233px; }
+      bottom: 199px;
+      left: 284px; }
 
 #container {
-  width: 200px;
-  height: 400px;
+  width: 250px;
+  height: 500px;
   display: flex;
   position: relative;
   overflow: hidden; }
 
 .wrapper {
   width: 100%;
-  height: 1200px;
+  height: 1500px;
   position: absolute; }
   .wrapper__swiper {
     background-color: rgba(246, 246, 246, 0.3);
@@ -248,10 +247,10 @@ body {
     font-size: 0.9em;
     color: white; }
     .wrapper__swiper i {
-      font-size: 2em;
+      font-size: 2.8em;
       margin-bottom: 10px; }
     .wrapper__swiper p {
-      font-size: 0.9em;
+      font-size: 1em;
       text-align: center; }
     .wrapper__swiper:not(:nth-child(4)) {
       margin-bottom: 10px; }
@@ -261,8 +260,8 @@ body {
       font-weight: 900; }
 
 .wrappers {
-  width: 200px;
-  height: 400px; }
+  width: 250px;
+  height: 500px; }
 
 /*#particles-js{
     position:absolute;
@@ -285,6 +284,8 @@ body {
   /*#particles-js{
         min-height:130vh;
     }*/
+  .box {
+    margin-top: 20px; }
   /*.social{
         /*background:#c9f658;*/
   /* margin:6px;
@@ -371,9 +372,11 @@ body {
   /* .box{
         width:905px;
         height:500px;
-    } 
-
-     .text{
+    } */
+  .box {
+    width: 80%;
+    margin-top: -5px; }
+  /* .text{
         margin-top:35px; 
     }
 
@@ -474,18 +477,19 @@ body {
     .slider__boton {
       font-size: 1.2em; }
       .slider__boton--1 {
-        margin-bottom: 35px;
-        margin-left: 5px; }
+        margin-bottom: 65px;
+        margin-left: -55px; }
       .slider__boton--2 {
-        margin-bottom: 60px;
-        margin-left: 5px; }
+        margin-bottom: 95px;
+        margin-left: -56px; }
   .wrapper {
     height: 218px;
-    width: 125px;
     margin: 20px; }
     .wrapper__swiper {
       height: calc(213px / 3);
-      margin-right: 15px; }
+      width: 145px;
+      position: relative;
+      left: 15%; }
       .wrapper__swiper i {
         text-align: center;
         font-size: 1.3em;
