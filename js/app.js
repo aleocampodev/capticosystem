@@ -77,7 +77,7 @@ particlesJS('particles-js',
         "attract": {
           "enable": false,
           "rotateX": 600,
-          "rotateY": 1200
+          "rotateY": 600
         }
       }
     },
@@ -92,7 +92,7 @@ particlesJS('particles-js',
           "enable": true,
           "mode": "push"
         },
-        "resize": true
+        "resize":true
       },
       "modes": {
         "grab": {
@@ -127,7 +127,7 @@ particlesJS('particles-js',
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
       "background_size": "cover"
-    }
+    },
   }
 
 );

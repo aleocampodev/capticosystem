@@ -37,6 +37,6 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
-    "particlesjs": "^2.2.3" 
+    "particlesjs": "^2.2.3"
   }
 }
