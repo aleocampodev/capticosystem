@@ -21,3 +21,6 @@ Command to run the web locally:
 ```bash
 npm run dev
 ```
+
+## Notes
+Original design, [dribbble](https://dribbble.com/shots/5541549-Captico/attachments)
