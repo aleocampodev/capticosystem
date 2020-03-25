@@ -1,6 +1,6 @@
 # capticosystem
 
-Responsive website built without any js framework
+Company website web design, created without any framework js and responsive 
 
 ## Demo
 For to see,[click here](https://infallible-dijkstra-093809.netlify.com/)
