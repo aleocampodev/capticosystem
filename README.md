@@ -1,6 +1,6 @@
 # capticosystem
 
-Website created 
+Responsive website built without any js framework
 
 ## Demo
 
